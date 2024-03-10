@@ -28,7 +28,7 @@ pipeline {
     post {
         failure {
             echo 'Pipeline failed'
-            // You can add additional actions to take upon failure here.
-        }
+            // You can add additional actions to take upon failure here. 
+        }
     }
 }
