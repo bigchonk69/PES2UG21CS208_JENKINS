@@ -3,7 +3,7 @@ pipeline {
     stages {
         // stage('Clone repository') {
         //     steps {
-        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Jatinsharma159/Jenkins.git']]])
+        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/bigchonk69/PES2UG21CS208_JENKINS']]])
         //     }
         // }
         stage('Build') {
