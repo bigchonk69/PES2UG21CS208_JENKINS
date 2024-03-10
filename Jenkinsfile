@@ -3,12 +3,12 @@ pipeline {
     stages {
         // stage('Clone repository') {
         //     steps {
-        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/bigchonk69/PES2UG21CS208_JENKINS']]])
+        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Jatinsharma159/Jenkins.git']]])
         //     }
         // }
         stage('Build') {
             steps {
-                build 'PES2UG21CS208-1'
+                build 'PES1UG21CS903-1'
                 sh 'g++ main.cpp -o output'
             }
         }
@@ -28,7 +28,7 @@ pipeline {
     post {
         failure {
             echo 'Pipeline failed'
-            // You can add additional actions to take upon failure here. 
+            // You can add additional actions to take upon failure here.
         }
-    }
+    }
 }
